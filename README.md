@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# DentCare - Premium Dental Clinic Website
 
-## Project info
+DentCare is a modern, responsive dental clinic website dedicated to providing exceptional dental services. This project is built to showcase a premium user experience with features like real-time doctor availability status, live queue tracking, and seamless appointment booking.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+-   **Interactive Doctor Status**: Real-time "In Clinic" / "Out of Clinic" indicator influenced by time and admin controls.
+-   **Live Queue Tracker**: A simulated live queue system for patients to check their token status.
+-   **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices with a smooth, app-like feel.
+-   **Appointment Booking**: Easy-to-use booking form with validation.
+-   **Service Showcases**: Detailed visuals and descriptions of dental treatments.
+-   **Modern Aesthetics**: "Glassmorphism" effects, smooth animations, and a clean, medical-grade color palette.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+This project is built using the following technologies:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+-   **React**: For building the user interface.
+-   **TypeScript**: For type safety and better developer experience.
+-   **Vite**: For fast development and building.
+-   **Tailwind CSS**: For utility-first styling and rapid UI development.
+-   **shadcn/ui**: For accessible and customizable UI components.
+-   **Lucide React**: For beautiful vector icons.
+-   **Framer Motion** (conceptually used via Tailwind animations): For smooth transitions.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+To run this project locally:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Sahin-sultan/DentCare.git
+    cd DentCare
+    ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Follow these steps:
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4.  **Open in browser:**
+    Visit `http://localhost:8080` (or the port shown in your terminal).
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
+-   `src/components`: Reusable UI components (Navbar, Hero, Footer, etc.).
+-   `src/pages`: Main page views.
+-   `src/context`: React context for global state (e.g., DoctorStatusContext).
+-   `src/lib`: Utility functions.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Customization
 
-**Edit a file directly in GitHub**
+You can easily customize the theme, colors, and content by editing the Tailwind configuration and the component files.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2025 DentCare. Built with care.
