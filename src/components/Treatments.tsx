@@ -53,8 +53,8 @@ export default function Treatments() {
               key={c}
               onClick={() => setActive(c)}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${active === c
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-muted-foreground hover:bg-primary/10"
+                ? "bg-primary text-primary-foreground"
+                : "bg-secondary text-muted-foreground hover:bg-primary/10"
                 }`}
             >
               {c}
