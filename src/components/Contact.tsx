@@ -17,7 +17,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 section-white" ref={ref}>
+    <section id="contact" className="relative py-20 section-white" ref={ref}>
       <div className="container mx-auto px-4">
         <h2 className={`font-heading text-3xl md:text-4xl font-bold text-center mb-10 fade-up ${isVisible ? "visible" : ""}`}>
           Get In Touch
