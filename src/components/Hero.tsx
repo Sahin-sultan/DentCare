@@ -6,7 +6,7 @@ export default function Hero() {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="home" className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-background">
+    <section id="home" className="relative pt-24 pb-12 lg:pt-40 lg:pb-32 overflow-hidden bg-background">
 
       {/* Background Shapes */}
       {/* Large Blue Circle on Right - characteristic of the reference image */}
@@ -20,6 +20,15 @@ export default function Hero() {
 
           {/* Left Content */}
           <div className="space-y-8 max-w-2xl relative">
+
+            {/* Hero Logo */}
+            <div className={`fade-up ${isVisible ? "visible" : ""}`}>
+              <img
+                src="https://res.cloudinary.com/ddzreu2to/image/upload/v1771823094/20260223_1030_Image_Generation_remix_01kj4dv76pecnatb5rd0zng7xa_omzpcf.png"
+                alt="DentCare Logo"
+                className="w-20 h-20 object-contain drop-shadow-xl"
+              />
+            </div>
 
             {/* Tag */}
             <div className={`
@@ -73,7 +82,7 @@ export default function Hero() {
           </div>
 
           {/* Right Image Compositon */}
-          <div className={`relative h-full min-h-[400px] flex items-center justify-center fade-up stagger-2 ${isVisible ? "visible" : ""}`}>
+          <div className={`relative h-full min-h-[300px] sm:min-h-[400px] flex items-center justify-center fade-up stagger-2 ${isVisible ? "visible" : ""}`}>
             {/* 
                  To mimic the "Group of Doctors in a Circle" look without 3D assets:
                  I will use the main image, but clipped into a circle, 
@@ -82,8 +91,8 @@ export default function Hero() {
 
             <div className="relative w-full max-w-md aspect-square">
               {/* Decorative Elements */}
-              <div className="absolute top-0 right-10 animate-bounce-slow text-4xl">💊</div>
-              <div className="absolute bottom-20 left-0 animate-float text-4xl" style={{ animationDelay: '1s' }}>🦷</div>
+              <div className="absolute top-0 right-10 animate-bounce-slow text-4xl hidden sm:block">💊</div>
+              <div className="absolute bottom-20 left-0 animate-float text-4xl hidden sm:block" style={{ animationDelay: '1s' }}>🦷</div>
 
               {/* Main Image Container - Circle Mask */}
               <div className="relative w-full h-full rounded-full border-[8px] border-white/50 shadow-2xl overflow-hidden bg-white">
