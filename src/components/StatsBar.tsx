@@ -13,7 +13,7 @@ export default function StatsBar() {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="relative z-20 -mt-16 pb-12">
+    <section ref={ref} className="relative z-20 py-8 lg:-mt-16 lg:pb-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, idx) => (
