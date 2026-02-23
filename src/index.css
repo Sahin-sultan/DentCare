@@ -2,6 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Mobile-first global resets ── */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Smooth momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+* {
+  /* Remove blue flash on tap (iOS/Android) */
+  -webkit-tap-highlight-color: transparent;
+  /* Prevent callout on long-press */
+  -webkit-touch-callout: none;
+}
+
+/* Allow normal text selection back on inputs/text */
+input,
+textarea,
+select,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  -webkit-touch-callout: default;
+}
+
+/* Prevent sub-pixel rendering issues on transforms */
+.fade-up {
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+}
+
 @layer base {
   :root {
     scroll-behavior: smooth;
