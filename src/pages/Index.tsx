@@ -6,7 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import AboutDoctor from "@/components/AboutDoctor";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
-import SpecialOffers from "@/components/SpecialOffers";
+import BookingForm from "@/components/BookingForm";
 import QueueTracker from "@/components/QueueTracker";
 import PostCareGuide from "@/components/PostCareGuide";
 import Contact from "@/components/Contact";
@@ -18,14 +18,14 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <QueueTracker />
       <StatsBar />
       <Treatments />
       <WhyChooseUs />
       <AboutDoctor />
       <Testimonials />
       <Pricing />
-      <SpecialOffers />
-      <QueueTracker />
+      <BookingForm />
       <PostCareGuide />
       <Contact />
       <Footer />

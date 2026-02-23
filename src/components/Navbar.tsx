@@ -123,10 +123,11 @@ export default function Navbar() {
           className="flex items-center gap-2 group"
           onClick={(e) => scrollToSection(e, "#home")}
         >
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="transition-transform duration-300 group-hover:rotate-12">
-            <path d="M16 2C10 2 8 6 8 10c0 6 4 18 8 18s8-12 8-18c0-4-2-8-8-8z" className="fill-primary" />
-            <path d="M12 6c-2 0-4 2-4 4 0 3 2 10 4 10" className="stroke-primary-foreground/50" strokeWidth="1.5" fill="none" />
-          </svg>
+          <img
+            src="https://res.cloudinary.com/ddzreu2to/image/upload/v1771823094/20260223_1030_Image_Generation_remix_01kj4dv76pecnatb5rd0zng7xa_omzpcf.png"
+            alt="DentCare Logo"
+            className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-110"
+          />
           <span className="font-heading text-xl font-bold text-foreground transition-colors duration-300">
             Dent<span className="text-primary">Care</span>
           </span>
@@ -172,7 +173,7 @@ export default function Navbar() {
             className="btn-pill-primary text-sm whitespace-nowrap shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all"
             onClick={(e) => scrollToSection(e, "#booking")}
           >
-            Book Appointment
+            Book an Appointment
           </a>
         </div>
 
@@ -231,7 +232,7 @@ export default function Navbar() {
           className="btn-pill-primary mt-10 w-64 text-center py-4 text-lg shadow-xl active:scale-95 transition-all"
           onClick={(e) => scrollToSection(e, "#booking")}
         >
-          Book Appointment
+          Book an Appointment
         </a>
       </div>
     </nav>
